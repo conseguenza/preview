@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Il Tagliapasta - Ristorante Maremmano a Grosseto</title>
+  <meta name="description" content="Cucina tradizionale maremmana nel cuore di Grosseto. Pici artigianali, peposo al Morellino e vini del territorio. Via Renato Fucini 12, 392 654 4754." />
+  <meta property="og:title" content="Il Tagliapasta, Grosseto" />
+  <meta property="og:description" content="Un luogo dove poter apprezzare i sapori semplici e tradizionali della cucina maremmana." />
+  <meta property="og:type" content="restaurant" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    Il <span>Tagliapasta</span>
+    <i class="fas fa-utensils" style="font-size: 1.2rem; color: var(--terracotta); margin-left: 0.3rem;"></i>
+  </a>
+  <ul class="nav-links">
+    <li><a href="menu.html">Menù</a></li>
+    <li><a href="#about">Chi siamo</a></li>
+    <li><a href="#recensioni">Recensioni</a></li>
+    <li><a href="#contatti">Contatti</a></li>
+    <li><a href="tel:+393926544754" class="nav-cta"><i class="fas fa-phone-alt"></i> Prenota</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Apri menù">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="menu.html"><i class="fas fa-utensils"></i> Menù</a>
+  <a href="#about" onclick="closeMobile()"><i class="fas fa-info-circle"></i> Chi siamo</a>
+  <a href="#recensioni" onclick="closeMobile()"><i class="fas fa-star"></i> Recensioni</a>
+  <a href="#contatti" onclick="closeMobile()"><i class="fas fa-map-marker-alt"></i> Contatti</a>
+  <a href="tel:+393926544754" class="cta-mob"><i class="fas fa-phone-alt"></i> Chiama e Prenota</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Cucina Maremmana · Grosseto</p>
+    <h1 class="hero-title">Il<br><em>Tagliapasta</em></h1>
+    <p class="hero-desc">Un luogo dove poter apprezzare i sapori semplici e tradizionali della cucina maremmana.</p>
+    <div class="hero-actions">
+      <a href="menu.html" class="btn-primary">
+        <i class="fas fa-book-open"></i> Scopri il Menù
+        <i class="fas fa-arrow-right"></i>
+      </a>
+      <a href="tel:+393926544754" class="btn-outline">
+        <i class="fas fa-phone-alt"></i> Prenota un Tavolo
+      </a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-slideshow" id="heroSlideshow">
+      <div class="hero-slide active">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/75/c6/fd/dettagli-della-trattoria.jpg?w=1000&h=-1&s=1" alt="Dettagli della trattoria Il Tagliapasta" loading="eager">
+      </div>
+      <div class="hero-slide">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/9c/c2/c6/caption.jpg?w=1000&h=-1&s=1" alt="Il Tagliapasta Grosseto" loading="lazy">
+      </div>
+      <div class="hero-slide">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/9c/c2/c5/caption.jpg?w=1000&h=-1&s=1" alt="Il Tagliapasta Grosseto interno" loading="lazy">
+      </div>
+      <div class="hero-slide">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/d7/ef/79/caption.jpg?w=1000&h=-1&s=1" alt="Piatti Il Tagliapasta" loading="lazy">
+      </div>
+    </div>
+    <div class="rating-badge"><span class="score">4.6</span><span class="label"><i class="fas fa-star"></i> TripAdvisor</span></div>
+    <div class="hero-slide-dots" id="heroSlideDots"></div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="about-strip">
+  <div class="strip-item"><i class="fas fa-leaf"></i><div><strong>Cucina Tradizionale</strong><span>Ricette della Maremma Toscana</span></div></div>
+  <div class="strip-div"></div>
+  <div class="strip-item"><i class="fas fa-wine-bottle"></i><div><strong>Vini del Territorio</strong><span>Morellino · Vermentino · Ansonica</span></div></div>
+  <div class="strip-div"></div>
+  <div class="strip-item"><i class="fas fa-heart"></i><div><strong>Ospitalità Vera</strong><span>Ambiente caldo e accogliente</span></div></div>
+  <div class="strip-div"></div>
+  <div class="strip-item"><i class="fas fa-trophy"></i><div><strong>Top Rated</strong><span>Tra i migliori in città</span></div></div>
+</div>
+
+<!-- MENU CTA -->
+<section id="menu-cta">
+  <div class="menu-cta-inner reveal">
+    <div class="section-header">
+      <p class="section-label">Cosa cuciniamo</p>
+      <h2 class="section-title">Il nostro <em>Menù</em></h2>
+      <div class="section-div"><div class="gem"></div></div>
+    </div>
+    <p class="desc">Pasta fresca tirata a mano ogni mattina, ragù che sobbollono per ore, vini scelti tra i migliori produttori maremmani. Ogni piatto racconta una storia di territorio.</p>
+    <div class="menu-preview-items">
+      <span class="preview-chip"><i class="fas fa-utensil-spoon"></i> Pici al ragù</span>
+      <span class="preview-chip"><i class="fas fa-drumstick-bite"></i> Peposo al Morellino</span>
+      <span class="preview-chip"><i class="fas fa-mushroom"></i> Pappardelle al cinghiale</span>
+      <span class="preview-chip"><i class="fas fa-bread-slice"></i> Ribollita della Nonna</span>
+      <span class="preview-chip"><i class="fas fa-fish"></i> Moscardini in umido</span>
+      <span class="preview-chip"><i class="fas fa-wine-glass-alt"></i> Vini locali DOC</span>
+    </div>
+    <a href="menu.html" class="btn-menu">
+      Vedi il Menù Completo
+      <i class="fas fa-arrow-right"></i>
+    </a>
+    <p class="qr-hint"><i class="fas fa-qrcode"></i> Puoi anche inquadrare il QR code al tavolo per accedere direttamente</p>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="recensioni">
+  <div class="section-header reveal">
+    <p class="section-label" style="color:var(--gold-light)">Cosa dicono di noi</p>
+    <h2 class="section-title">Le <em style="color:var(--gold-light)">Recensioni</em></h2>
+    <div class="section-div"><div class="gem"></div></div>
+  </div>
+  <div class="reviews-stats">
+    <div class="rstat"><span class="num">4.6</span><span class="lbl"><i class="fab fa-google"></i> Google</span></div>
+    <div class="rstat"><span class="num">4.6</span><span class="lbl"><i class="fab fa-tripadvisor"></i> TripAdvisor</span></div>
+    <div class="rstat"><span class="num">4.5</span><span class="lbl"><i class="fab fa-facebook"></i> Facebook</span></div>
+    <div class="rstat"><span class="num">#3</span><span class="lbl">su 283 rist.</span></div>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card reveal">
+      <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="review-text">Ottimo cibo, prezzo in linea, vasta scelta di vini di ottima qualità, servizio attento e non invadente, simpatia ed accoglienza. Esperienza da ripetere assolutamente.</p>
+      <p class="review-author">Mauro D.</p>
+      <p class="review-src"><i class="fab fa-google"></i> Google Reviews</p>
+    </div>
+    <div class="review-card reveal">
+      <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="review-text">Fantastico! Si mangia divinamente, curati, buoni e profumati di buono. Ci siamo sentiti coccolati dall'inizio alla fine in un ambiente davvero piacevole.</p>
+      <p class="review-author">Valentina N.</p>
+      <p class="review-src"><i class="fab fa-google"></i> Google Reviews</p>
+    </div>
+    <div class="review-card reveal">
+      <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="review-text">I pici al ragù erano semplicemente perfetti, uno dei migliori piatti che abbia assaggiato in Toscana. Il peposo al Morellino è da non perdere.</p>
+      <p class="review-author">Francesco B.</p>
+      <p class="review-src"><i class="fab fa-google"></i> Google Reviews</p>
+    </div>
+  </div>
+
+  <!-- TRIPADVISOR CAROUSEL -->
+  <div class="ta-carousel-wrap reveal">
+    <div class="ta-carousel-label">
+      <div class="ta-logo">
+        <i class="fab fa-tripadvisor" style="color: #34E0A1; font-size: 1.3rem;"></i>
+        Recensioni TripAdvisor
+      </div>
+      <a href="https://www.tripadvisor.it/Restaurant_Review-g194778-d8146060-Reviews-Il_Tagliapasta-Grosseto_Province_of_Grosseto_Tuscany.html" target="_blank" rel="noopener" class="ta-link">
+        Leggi tutte
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+
+    <div class="ta-track-outer" id="taTrackOuter">
+      <div class="ta-track" id="taTrack">
+        <div class="ta-card"><div class="ta-card-top"><div class="ta-bubble"><span></span><span></span><span></span><span></span><span></span></div><span class="ta-quote">"</span></div><p class="ta-text">Un posto curato, elegante, semplicemente unico a Grosseto. Abbiamo mangiato benissimo. Servizio professionale e attento. Qualità del cibo eccezionale.</p><div class="ta-footer"><div class="ta-avatar">C</div><div><p class="ta-author-name">Corrado & Maria</p><p class="ta-author-meta"><i class="fab fa-tripadvisor"></i> Assisi</p></div></div></div>
+        <div class="ta-card"><div class="ta-card-top"><div class="ta-bubble"><span></span><span></span><span></span><span></span><span></span></div><span class="ta-quote">"</span></div><p class="ta-text">Una bella scoperta, da tornarci al più presto. La pasta fatta in casa è straordinaria, tortelli maremmani e pappardelle al cinghiale da non perdere.</p><div class="ta-footer"><div class="ta-avatar">L</div><div><p class="ta-author-name">Laura S.</p><p class="ta-author-meta"><i class="fab fa-tripadvisor"></i> Roma</p></div></div></div>
+        <div class="ta-card"><div class="ta-card-top"><div class="ta-bubble"><span></span><span></span><span></span><span></span><span></span></div><span class="ta-quote">"</span></div><p class="ta-text">Siamo andati a pranzo in famiglia e siamo stati fortunati. Ambiente confortevole, cibo eccellente: pici al cinghiale strepitosi, Morellino perfetto.</p><div class="ta-footer"><div class="ta-avatar">G</div><div><p class="ta-author-name">Gianmatteo E.</p><p class="ta-author-meta"><i class="fab fa-tripadvisor"></i> Toscana</p></div></div></div>
+        <div class="ta-card"><div class="ta-card-top"><div class="ta-bubble"><span></span><span></span><span></span><span></span><span></span></div><span class="ta-quote">"</span></div><p class="ta-text">Trattoria con ingredienti freschi e piatti interessanti. Pasta fatta in casa eccellente. Ottima carta dei vini. Personale cordiale.</p><div class="ta-footer"><div class="ta-avatar">A</div><div><p class="ta-author-name">Andrea C.</p><p class="ta-author-meta"><i class="fab fa-tripadvisor"></i> Grosseto</p></div></div></div>
+        <div class="ta-card"><div class="ta-card-top"><div class="ta-bubble"><span></span><span></span><span></span><span></span><span></span></div><span class="ta-quote">"</span></div><p class="ta-text">Cena meravigliosa. La bistecca era straordinaria, la pasta un'esperienza culinaria. Il titolare ci ha coccolati con il miglior tiramisù d'Italia!</p><div class="ta-footer"><div class="ta-avatar">Y</div><div><p class="ta-author-name">Yoav M.</p><p class="ta-author-meta"><i class="fab fa-tripadvisor"></i> Ottobre 2025</p></div></div></div>
+        <div class="ta-card"><div class="ta-card-top"><div class="ta-bubble"><span></span><span></span><span></span><span></span><span></span></div><span class="ta-quote">"</span></div><p class="ta-text">Locale scenografico tra i più belli. Piatti genuini, dalla pasta fatta a mano agli ottimi dolci artigianali. Un viaggio nel gusto autentico.</p><div class="ta-footer"><div class="ta-avatar">F</div><div><p class="ta-author-name">Francesca B.</p><p class="ta-author-meta"><i class="fab fa-tripadvisor"></i> Firenze</p></div></div></div>
+      </div>
+    </div>
+    <div class="ta-nav"><button class="ta-btn" id="taPrev"><i class="fas fa-chevron-left"></i></button><div class="ta-dots" id="taDots"></div><button class="ta-btn" id="taNext"><i class="fas fa-chevron-right"></i></button></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-visual reveal">
+    <div class="about-year"><span>dal</span>2014</div>
+    <div class="about-photos">
+      <div class="about-photo-main"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/3a/e7/ca/caption.jpg?w=1000&h=-1&s=1" alt="sala" loading="lazy"></div>
+      <div class="about-photo-stack">
+        <div class="about-photo-small"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/a4/4e/c8/caption.jpg?w=1000&h=-1&s=1" alt="piatto" loading="lazy"></div>
+        <div class="about-photo-small"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/08/d3/bf/caption.jpg?w=1000&h=-1&s=1" alt="ambiente" loading="lazy"></div>
+      </div>
+    </div>
+    <div class="about-accent"></div>
+  </div>
+  <div class="about-content reveal">
+    <div class="section-header">
+      <p class="section-label">La nostra storia</p>
+      <h2 class="section-title">Sapori <em>autentici</em><br>di Maremma</h2>
+      <div class="section-div"><div class="gem"></div></div>
+    </div>
+    <p class="about-p">Il Tagliapasta nasce dall'amore per la cucina povera e autentica della Maremma Toscana. In cucina utilizziamo ingredienti freschi, stagionali e a chilometro zero, scelti tra i migliori produttori locali.</p>
+    <p class="about-p">I nostri pici vengono tirati a mano ogni mattina. Il ragù sobbollisce per ore, i bolliti riposano nei loro brodi. Qui il tempo è un ingrediente prezioso quanto la farina.</p>
+    <div class="about-features">
+      <div class="about-feat"><div class="feat-dot"></div><i class="fas fa-check"></i> Pasta fresca artigianale</div>
+      <div class="about-feat"><div class="feat-dot"></div><i class="fas fa-check"></i> Ingredienti del territorio</div>
+      <div class="about-feat"><div class="feat-dot"></div><i class="fas fa-check"></i> Vini DOC e DOCG locali</div>
+      <div class="about-feat"><div class="feat-dot"></div><i class="fas fa-check"></i> Prenotazione consigliata</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATTI -->
+<section id="contatti">
+  <div class="contact-info reveal">
+    <div class="section-header">
+      <p class="section-label">Dove siamo</p>
+      <h2 class="section-title">Vieni a <em>trovarci</em></h2>
+      <div class="section-div"><div class="gem"></div></div>
+    </div>
+    <div>
+      <div class="contact-item"><div class="cicon"><i class="fas fa-map-marker-alt"></i></div><div class="ctext"><strong>Indirizzo</strong>Via Renato Fucini, 12<br>58100 Grosseto (GR), Toscana</div></div>
+      <div class="contact-item"><div class="cicon"><i class="fas fa-phone-alt"></i></div><div class="ctext"><strong>Telefono & Prenotazioni</strong><a href="tel:+393926544754">392 654 4754</a></div></div>
+      <div class="contact-item"><div class="cicon"><i class="fas fa-credit-card"></i></div><div class="ctext"><strong>Pagamenti</strong>Carte di credito e bancomat accettati</div></div>
+    </div>
+    <p class="orari-title"><i class="far fa-clock"></i> Orari di apertura</p>
+    <div class="orari-grid">
+      <div class="orario"><strong>Lunedì</strong>12:30–14:30 · 19:30–22:30</div>
+      <div class="orario chiuso"><strong>Martedì</strong>Chiuso</div>
+      <div class="orario"><strong>Mercoledì</strong>12:30–14:30 · 19:30–22:30</div>
+      <div class="orario"><strong>Giovedì</strong>12:30–14:30 · 19:30–22:30</div>
+      <div class="orario"><strong>Venerdì</strong>12:30–14:30 · 19:30–22:30</div>
+      <div class="orario"><strong>Sabato</strong>12:30–14:30 · 19:30–22:30</div>
+      <div class="orario"><strong>Domenica</strong>12:30–14:30 · 19:30–22:30</div>
+    </div>
+  </div>
+  <div class="map-wrap reveal">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.5!2d11.1075!3d42.7603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a295f5b2e6e75%3A0x1!2sVia+Renato+Fucini+12%2C+58100+Grosseto+GR!5e0!3m2!1sit!2sit!4v1" allowfullscreen="" loading="lazy" title="Mappa Il Tagliapasta"></iframe>
+    <div class="map-cta"><a href="tel:+393926544754" class="btn-primary"><i class="fas fa-phone-alt"></i> Chiama e Prenota</a></div>
+  </div>
+</section>
+
+<footer>
+  <div><div class="footer-logo">Il <span>Tagliapasta</span></div><p>Via Renato Fucini, 12 · 58100 Grosseto</p></div>
+  <p>Cucina Maremmana Tradizionale<br><a href="tel:+393926544754"><i class="fas fa-phone-alt"></i> 392 654 4754</a></p>
+  <p>© 2026 Il Tagliapasta<br>Tutti i diritti riservati</p>
+</footer>
+
+<script src="preview-badge.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

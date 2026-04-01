@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Menù – Il Tagliapasta, Grosseto</title>
+  <meta name="description" content="Menù completo de Il Tagliapasta di Grosseto: primi, secondi e bevande della tradizione maremmana." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="menu-header">
+  <a href="index.html" class="back-link">
+    <i class="fas fa-arrow-left"></i>
+    Torna al sito
+  </a>
+  <div class="menu-header-logo">Il <span>Tagliapasta</span></div>
+  <p class="menu-header-sub"><i class="fas fa-map-marker-alt"></i> Via Renato Fucini 12, Grosseto · <i class="fas fa-phone-alt"></i> 392 654 4754</p>
+  <div class="menu-header-divider"><div class="gem-gold"></div></div>
+  <a href="tel:+393926544754" class="menu-header-cta">
+    <i class="fas fa-phone-alt"></i> Chiama per Prenotare
+  </a>
+</header>
+
+<div class="tabs-wrap">
+  <div class="tabs">
+    <button class="tab-btn active" onclick="showPanel('primi',this)"><i class="fas fa-utensil-spoon"></i> Primi</button>
+    <button class="tab-btn" onclick="showPanel('secondi',this)"><i class="fas fa-drumstick-bite"></i> Secondi</button>
+    <button class="tab-btn" onclick="showPanel('bevande',this)"><i class="fas fa-wine-glass-alt"></i> Bevande</button>
+  </div>
+</div>
+
+<div class="panel active" id="panel-primi">
+  <p class="panel-title">Primi Piatti</p>
+  <p class="panel-desc">Pasta fresca tirata a mano ogni mattina. I nostri pici e le nostre pappardelle sono preparati con farina di grano tenero e portati in tavola con i condimenti della tradizione maremmana.</p>
+  <div class="dish-list">
+    <div class="dish"><div class="dish-info"><p class="dish-name">Pici al Ragù di Chianina <span class="badge"><i class="fas fa-star"></i> Signature</span></p><p class="dish-desc">Pasta grossa tirata a mano con ragù lento di manzo Chianina, pomodoro toscano e basilico fresco.</p></div><div class="dish-price">€ 14</div></div>
+    <div class="dish"><div class="dish-info"><p class="dish-name">Pici con Salsiccia e Porri</p><p class="dish-desc">Pici artigianali saltati con salsiccia di maiale nostrano, porri di stagione e olio extravergine toscano.</p></div><div class="dish-price">€ 13</div></div>
+    <div class="dish"><div class="dish-info"><p class="dish-name">Pappardelle al Cinghiale</p><p class="dish-desc">Pappardelle all'uovo con ragù di cinghiale maremmano, aromi selvatici e Morellino di Scansano.</p></div><div class="dish-price">€ 15</div></div>
+    <div class="dish"><div class="dish-info"><p class="dish-name">Tagliatelle ai Funghi Porcini</p><p class="dish-desc">Pasta fresca all'uovo con porcini freschi di stagione, aglio, prezzemolo e burro al tartufo.</p></div><div class="dish-price">€ 14</div></div>
+    <div class="dish"><div class="dish-info"><p class="dish-name">Ribollita della Nonna</p><p class="dish-desc">Zuppa toscana: cavolo nero, fagioli cannellini, pane raffermo ripassato con olio nuovo.</p></div><div class="dish-price">€ 11</div></div>
+    <div class="dish"><div class="dish-info"><p class="dish-name">Acquacotta Maremmana</p><p class="dish-desc">Brodo di verdure con uovo in camicia, pane tostato, pecorino stagionato e olio extravergine.</p></div><div class="dish-price">€ 10</div></div>
+  </div>
+</div>
+
+<div class="panel" id="panel-secondi">
+  <p class="panel-title">Secondi Piatti</p>
+  <p class="panel-desc">Carni selezionate del territorio, pesce dell'Argentario e i grandi classici della cucina povera maremmana.</p>
+  <div class="dish-list">
+    <div class="dish"><div class="dish-info"><p class="dish-name">Peposo al Morellino <span class="badge"><i class="fas fa-star"></i> Signature</span></p><p class="dish-desc">Stufato di manzo a lunga cottura nel Morellino di Scansano con abbondante pepe nero.</p></div><div class="dish-price">€ 18</div></div>
+    <div class="dish"><div class="dish-info"><p class="dish-name">Bistecca alla Maremmana</p><p class="dish-desc">Taglio pregiato di Chianina cotto alla griglia, rosmarino fresco e sale marino di Volterra.</p></div><div class="dish-price">€ 22</div></div>
+    <div class="dish"><div class="dish-info"><p class="dish-name">Tagliata con Rucola e Parmigiano</p><p class="dish-desc">Controfiletto ai ferri su letto di rucola selvatica, pomodorini confit e scaglie di Parmigiano.</p></div><div class="dish-price">€ 20</div></div>
+    <div class="dish"><div class="dish-info"><p class="dish-name">Scaloppine al Limone</p><p class="dish-desc">Fettine di vitello saltate nel burro con limone, capperi di Pantelleria e salvia fresca.</p></div><div class="dish-price">€ 16</div></div>
+    <div class="dish"><div class="dish-info"><p class="dish-name">Moscardini in Umido</p><p class="dish-desc">Polpetti dell'Argentario in salsa di pomodoro con olive taggiasche, capperi e prezzemolo.</p></div><div class="dish-price">€ 17</div></div>
+    <div class="dish"><div class="dish-info"><p class="dish-name">Carpaccio di Chianina</p><p class="dish-desc">Fettine di manzo crudo con rucola, scaglie di pecorino toscano e olio del frantoio locale.</p></div><div class="dish-price">€ 14</div></div>
+  </div>
+</div>
+
+<div class="panel" id="panel-bevande">
+  <p class="panel-title">Bevande</p>
+  <p class="panel-desc">Selezione di vini locali della Maremma Toscana: Morellino di Scansano, Vermentino, Ansonica e bollicine.</p>
+  <div class="bev-sections">
+    <div class="bev-section"><p class="bev-section-title"><i class="fas fa-wine-bottle"></i> Vini</p>
+      <div class="bev-item"><span>Morellino di Scansano DOCG</span><span>€ 5 / bic.</span></div>
+      <div class="bev-item"><span>Vermentino di Maremma DOC</span><span>€ 5 / bic.</span></div>
+      <div class="bev-item"><span>Ansonica Costa Argentario</span><span>€ 5 / bic.</span></div>
+      <div class="bev-item"><span>Sangiovese IGT Toscana</span><span>€ 4.50 / bic.</span></div>
+      <div class="bev-item"><span>Bottiglia rosso della casa</span><span>€ 18</span></div>
+      <div class="bev-item"><span>Bottiglia bianco della casa</span><span>€ 16</span></div>
+      <div class="bev-item"><span>Prosecco DOC</span><span>€ 4</span></div>
+    </div>
+    <div class="bev-section"><p class="bev-section-title"><i class="fas fa-coffee"></i> Analcoliche</p>
+      <div class="bev-item"><span>Acqua naturale (75 cl)</span><span>€ 2</span></div>
+      <div class="bev-item"><span>Acqua frizzante (75 cl)</span><span>€ 2</span></div>
+      <div class="bev-item"><span>Limonata artigianale</span><span>€ 4</span></div>
+      <div class="bev-item"><span>Succhi di frutta</span><span>€ 3</span></div>
+      <div class="bev-item"><span>Bibite in lattina</span><span>€ 3</span></div>
+      <div class="bev-item"><span>Tè freddo del giorno</span><span>€ 3.50</span></div>
+    </div>
+    <div class="bev-section"><p class="bev-section-title"><i class="fas fa-mug-hot"></i> Caffetteria & Digestivi</p>
+      <div class="bev-item"><span>Caffè espresso</span><span>€ 1.50</span></div>
+      <div class="bev-item"><span>Caffè macchiato</span><span>€ 1.80</span></div>
+      <div class="bev-item"><span>Cappuccino</span><span>€ 2</span></div>
+      <div class="bev-item"><span>Limoncello artigianale</span><span>€ 3.50</span></div>
+      <div class="bev-item"><span>Amaro della casa</span><span>€ 4</span></div>
+      <div class="bev-item"><span>Grappa Toscana</span><span>€ 4</span></div>
+    </div>
+  </div>
+</div>
+
+<a href="tel:+393926544754" class="sticky-call" id="sticky-cta">
+  <i class="fas fa-phone-alt"></i> Prenota
+</a>
+
+<footer class="menu-footer">
+  Il Tagliapasta · Via Renato Fucini, 12 · 58100 Grosseto ·
+  <a href="tel:+393926544754"><i class="fas fa-phone-alt"></i> 392 654 4754</a>
+  &nbsp;|&nbsp;
+  <a href="index.html"><i class="fas fa-arrow-left"></i> Torna al sito</a>
+</footer>
+
+<script src="preview-badge.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
