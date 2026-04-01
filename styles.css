@@ -72,6 +72,9 @@ nav.scrolled {
   gap: 0.6rem;
 }
 
+.nav-logo-img{height:36px;width:auto;object-fit:contain;display:block}
+@media(max-width:900px){.nav-logo-img{height:28px}}
+
 .nav-logo span {
   color: var(--charcoal);
 }
